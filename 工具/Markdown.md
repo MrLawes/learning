@@ -48,3 +48,7 @@
     - First item(First)
     - Second item(First)
 1. Second item
+
+# 代码语法
+要将单词或短语表示为代码，请将其包裹在反引号 (`) 中。
+At the command prompt, type `nano`.
