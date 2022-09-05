@@ -70,7 +70,7 @@
 <https://markdown.com.cn>  
 <fake@example.com>
 
-[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
+[link](https://www.example.com/my%20great%20page)
 
 
 
