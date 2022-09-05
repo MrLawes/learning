@@ -70,7 +70,23 @@
 <https://markdown.com.cn>  
 <fake@example.com>
 
-[link](https://www.example.com/my%20great%20page)
+## 引用类型链接
+### 链接的第一部分格式
+第一组方括号包围应显示为链接的文本。第二组括号显示了一个标签  
+[hobbit-hole][1]
+
+### 链接的第二部分格式
+引用类型链接的第二部分使用以下属性设置格式：
+
+1. 放在括号中的标签，其后紧跟一个冒号和至少一个空格（例如[label]:）。
+1. 链接的URL，可以选择将其括在尖括号中。
+1. 链接的可选标题，可以将其括在双引号，单引号或括号中。
+
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
+
+
+
+[^1]: 我是脚注
 
 
 
