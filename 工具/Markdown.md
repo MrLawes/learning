@@ -84,9 +84,15 @@
 
 [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
 
+# 图片语法
+要添加图像，请使用感叹号 (!), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。
 
+![这是图片](/assets/img/philly-magic-garden.jpg "Magic Gardens")
 
-[^1]: 我是脚注
+## 链接图片
 
+给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。
+
+[![沙漠中的岩石图片](/assets/img/shiprock.jpg "Shiprock")](https://markdown.com.cn)
 
 
