@@ -64,7 +64,7 @@
 
 # 链接语法
 链接文本放在中括号内，链接地址放在后面的括号中，链接title可选。  
-这是一个链接 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
+这是一个链接 [Markdown语法](https://markdown.com.cn "我是Title")。
 
 
 
