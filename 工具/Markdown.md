@@ -42,3 +42,9 @@
 - First item
 - Second item
 
+## 在列表中嵌套其他元素
+要在保留列表连续性的同时在列表中添加另一种元素，请将该元素缩进四个空格或一个制表符
+1. First item
+    - First item(First)
+    - Second item(First)
+1. Second item
