@@ -3,3 +3,6 @@
 `# Heading level 1`
 `## Heading level 2`
 `### Heading level 3`
+
+## 可选语法
+还可以在文本下方添加任意数量的 == 号来标识一级标题，或者 -- 号来标识二级标题。
