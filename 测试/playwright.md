@@ -14,7 +14,7 @@ playwright install chromium
 
 ---
 
-### 运用测试用例
+## 测试用例
 test_my_application.py
 
 ```
@@ -42,8 +42,75 @@ def test_homepage_has_Playwright_in_title_and_get_started_link_linking_to_the_in
 
 ---
 
-# todo https://playwright.dev/python/docs/writing-tests
+### Using Test Hooks
 
+```
+import pytest
+from playwright.sync_api import Page
+
+
+@pytest.fixture(scope="function", autouse=True)
+def before_each_after_each(page: Page):
+    print("beforeEach")
+    # Go to the starting url before each test.
+    page.goto("https://playwright.dev/")
+    yield
+    print("afterEach")
+
+def test_main_navigation(page: Page):
+    # Assertions use the expect API.
+    expect(page).to_have_url("https://playwright.dev/")
+```
+
+---
+
+## Running Tests
+
+### 只执行某个 function
+
+`pytest -k "test_add_a_todo_item"`
+
+### 使用多种浏览器测试
+
+`pytest test_login.py --browser webkit --browser firefox`
+
+### 多进程测试
+
+需要安装：pytest-xdist
+
+`pytest --numprocesses auto`
+
+### DEBUG 模式
+
+`PWDEBUG=1 pytest -s`
+
+### 录制
+
+`playwright codegen playwright.dev`
+
+## 追踪
+
+### 记录过程
+
+```
+browser = chromium.launch()
+context = browser.new_context()
+
+# Start tracing before creating / navigating a page.
+context.tracing.start(screenshots=True, snapshots=True, sources=True)
+
+page = context.new_page()
+page.goto("https://playwright.dev")
+
+# Stop tracing and export it into a zip archive.
+context.tracing.stop(path = "trace.zip")
+```
+
+### 打开记录的过程
+
+`playwright show-trace trace.zip`
+
+---
 
 ## Pytest Plugin Reference
 pytest --browser chromium --headed blue/tests/playwright
