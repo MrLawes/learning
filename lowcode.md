@@ -10,4 +10,5 @@ nvm install node
 
 ### 替换 npm 源
 npm install -g cnpm --registry=https://registry.npmmirror.com
-cnpm install
+cnpm install 16
+npm start
