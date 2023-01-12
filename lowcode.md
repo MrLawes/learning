@@ -6,9 +6,10 @@ git clone https://github.com/alibaba/lowcode-demo.git
 
 ### 安装 nvm 及 node.js
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-nvm install node
+nvm install 16
+nvm use 16
 
 ### 替换 npm 源
 npm install -g cnpm --registry=https://registry.npmmirror.com
-cnpm install 16
+cnpm install
 npm start
